@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CovLive | A Propos</title>
+  <meta content="" name="A propos de CovLive">
+  <meta content="" name="A propos de CovLive, A propos, CovLive, Cheick Konaté ">
+
+  <script src="https://kit.fontawesome.com/abd6d316b4.js" crossorigin="anonymous"></script>
+  
+  <!-- Favicons -->
+  <!-- <link href="{% static '/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static '/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- {% static '/css/base.css' %} -->
+  <!-- Vendor CSS Files -->
+  <link href="{% static '/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static '/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static '/assets/css/style.css' %}" rel="stylesheet">
+  
+  {% block mystyle %} 
+  
+  {% endblock mystyle %}
+</head>
+
+<body >
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top bg-dark mb-5">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="{% url 'home' %}#hero">CovLive<span>.</span></a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url 'home' %}#hero">Accueil</a></li>
+          <li><a href={% url 'analyses' %}>Analyses</a></li>
+          <li><a href={% url 'donnees_par_pays' %}>Données par Pays</a></li>
+          <li><a href= {% url 'contact' %}>Contacts</a></li>
+          <li><a href={% url 'apropos' %}>A Propos</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="https://www.who.int/fr" class="get-started-btn scrollto" target="_blank">Site Web de l'OMS </a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about mt-5">
+    <div class="container mt-5" data-aos="fade-up">
+
+      <div class="row mt-5">
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          <img src="{% static '/assets/img/about.jpg' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+          <h3>A Propos</h3>
+          <p class="font-italic">
+
+            La Covid19 fait partir de la famille des coronavirus. ce sont des virus à ARN enveloppés qui provoquent des maladies 
+            respiratoires de gravité variable, du rhume à la pneumonie fatale. L'initialement détecté dans la ville de Wuhan 
+            en Chine vers la fin de 2019, la Covid19 s'est rependu dans le monde en début 2020. Jusqu'a ce que L’OMS déclare
+            le 11 mars 2020 que l’éclosion est une pandémie.</br></br>
+
+            Dans le cadre de notre projet de fin d'etude, mon equipe et moi etions chargés d'effectuer une 
+            analyse descriptive de l’évolution de la pandémie dans le monde. </br>
+            Grâce aux bases de données trouvées sur des sites très fiables et toujours actualisées, nous avons collecté puis nettoyé les données par 
+            la suite nous avons effectué des analyses sur les points suivants:
+          </p>
+          <ul>
+            <li><i class="ri-check-double-line"></i> Le Nombre de Cas Confirmés.</li>
+            <li><i class="ri-check-double-line"></i> Le Nombre de Décès.</li>
+            <li><i class="ri-check-double-line"></i> Le Nombre de Tests.</li>
+            <li><i class="ri-check-double-line"></i> Les Activitees.</li>
+            <li><i class="ri-check-double-line"></i> Les Activites sur les medias sociaux.</li>
+            <li><i class="ri-check-double-line"></i> Les medias Sociaux.</li>
+            <li><i class="ri-check-double-line"></i> La recherche d'information.</li>
+          </ul>
+          <p>
+            En faisant usage du logiciel Power BI nous produirons des tableaux de bords contenant des graphiques qui 
+            nous semblent pertinents. Par la suite, j'ai dû créé une plateforme web pour Publier nos récherches.</br></br></br>
+            
+            <b>NB: </b>Il est important de mentionner que l’information pouvant ne pas être fiable à 100 % mais ce rapport 
+               ressortira néanmoins des analyses et des comparaisons qui semblent pertinentes.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Clients Section ======= -->
+  <section id="clients" class="clients">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="owl-carousel clients-carousel">
+        <img src="{% static '/assets/img/clients/OMS.jpg' %}" alt="">
+        <img src="{% static '/assets/img/clients/ca.jpg' %}" alt="">
+      </div>
+
+    </div>
+  </section><!-- End Clients Section -->
+<!-- End Features Section -->
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="{% static '/assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <!-- <script src="{% static '/assets/vendor/php-email-form/validate.js' %}"></script> -->
+  <script src="{% static '/assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static '/assets/vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static '/assets/js/main.js' %}"></script>
+
+  <script>
+    // popovers initialization - on hover
+    $('[data-toggle="popover-hover"]').popover({
+      html: true,
+      trigger: 'hover',
+      placement: 'bottom',
+    });
+  </script>
+</body>
+
+</html>

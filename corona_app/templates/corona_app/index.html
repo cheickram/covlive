@@ -1,0 +1,400 @@
+{% extends 'corona_app/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block content %}
+<section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+                <h1>
+                    La COVID-19 <span>,</span>
+                </h1>
+                <h2>
+                  fait partir de la famille des coronavirus. ce sont des virus à ARN enveloppés qui provoquent des maladies 
+                  respiratoires de gravité variable, du rhume à la pneumonie fatale.
+                </h2>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+            <div class="col-xl-3 col-md-4 col-6">
+                <div class="icon-box">
+                    <i class="fas fa-virus"></i>
+                    <h3><a href=""> {{ NewConfirmed }} <br> Nouveaux Cas  </a></h3>
+                </div>
+            </div>
+            
+            <div class="col-xl-3 col-md-4 col-6">
+                <div class="icon-box">
+                    <i class="fas fa-head-side-mask"></i>
+                    <h3><a href=""> {{ NewRecovered }} <br> Nouveaux Gueris  </a></h3>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-6">
+                <div class="icon-box">
+                    <i class="fas fa-skull-crossbones"></i>
+                    <h3><a href=""> {{ NewDeaths }} <br> Nouveaux Décès  </a></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+            <div class="col-xl-3 col-md-4 col-6">
+                <div class="icon-box">
+                    <i class="fas fa-virus"></i>
+                    <h3><a href=""> {{ TotalConfirmed }} <br> Total Cas Confirmes  </a></h3>
+                </div>
+            </div>
+            
+            <div class="col-xl-3 col-md-4 col-6">
+                <div class="icon-box">
+                    <i class="fas fa-head-side-mask"></i>
+                    <h3><a href=""> {{ TotalRecovered }} <br> Total Gueris  </a></h3>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-4 col-6">
+                <div class="icon-box">
+                    <i class="fas fa-skull-crossbones"></i>
+                    <h3><a href=""> {{ TotalDeaths }} <br> Total Décès  </a></h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<main id="main">
+    <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title mt-4">
+                <h2>Informations</h2>
+                <p>Les Gestes Barrières </p>
+              </div>
+            <div class="row">
+                <div class="image col-lg-6 information" data-aos="fade-right"></div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+                    <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="fas fa-hands-wash" style='font-size:36px'></i>
+                        <h4>Se laver les mains</h4>
+                        <p>Lavez-vous les mains très régulièrement (avec de l'eau et du savon, ou du gel hydro-alcoolique).</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="fas fa-people-arrows" style='font-size:36px'></i>
+                        <h4>Distanciation Social</h4>
+                        <p>Restez toujours à plus d’un mètre les uns des autres ou Portez un masque quand la distance d’un mètre ne peut pas être respectée.</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="fas fa-head-side-cough-slash" style='font-size:36px'></i>
+                        <h4>Proteger Vous</h4>
+                        <p>Toussez ou éternuez dans votre coude ou dans un mouchoir / Utilisez un mouchoir à usage unique et jetez-le.</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="fas fa-handshake-slash" style='font-size:36px'></i>
+                        <h4>Proteger Votre Entourage</h4>
+                        <p>Saluez sans vous serrer la main, arrêtez les embrassades / Evitez de vous toucher le visage en particulier le nez et la bouche.</p>
+                    </div>
+                </div>
+            </div>
+  
+        </div>
+    </section>
+    <!-- End Features Section -->
+
+    
+
+    <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Statistiques Mondiale</h2>
+                <p>Analyses Statistiques</p>
+            </div>
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    <li data-target="#multi-item-example" data-slide-to="2"></li>
+    <li data-target="#multi-item-example" data-slide-to="3"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-6" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="{% static 'assets/img/cas.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Nombre de Cas Confirmés</h4>
+            <p class="card-text">l’évolution du nombre de cas confirmés dans le monde au fil du temps.</p> 
+            <center><a class="btn btn-warning text-white" href={% url 'nbr_cas_conf' %}>Voir</a></center>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="{% static 'assets/img/deces.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Nombre de Décès</h4>
+            <p class="card-text">comparaison de la vitesse d'evolution du nombre de décès par pays.</p>
+            <center><a class="btn btn-warning text-white" href={% url 'nbr_deces' %}>Voir</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-6" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="{% static 'assets/img/test.jpg' %}"  alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Nombre de Tests</h4>
+            <p class="card-text">denombremenet du nombre de tests effectués par jour par milliers de personnes.</p>
+            <center><a class="btn btn-warning text-white" href={% url 'nbr_tests' %}>Voir</a></center>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="{% static 'assets/img/act.jpeg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Les Activitées </h4>
+            <p class="card-text">les activités effectuées par les indivudus durant la periode de confinement.</p>
+            <center><a class="btn btn-warning text-white" href={% url 'act' %}>Voir</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-6" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="{% static 'assets/img/media.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Les Activites sur les medias sociaux</h4>
+            <p class="card-text">les activités effectuées sur les medias sociaux durant la periode de confinement.</p>
+            <center><a class="btn btn-warning text-white" href={% url 'act_medias' %}>Voir</a></center>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="{% static 'assets/img/ms.png' %}" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Les medias Sociaux</h4>
+            <p class="card-text">mise en évidence des réseaux sociaux utilisés par les individus pour passer du temps.</p>
+            <center><a class="btn btn-warning text-white" href={% url 'medias_sociaux' %}>Voir</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Third slide-->
+
+    <!--Fourth slide-->
+    <div class="carousel-item">
+      <div class="col-md-6" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="{% static 'assets/img/re.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">La recherche d'information</h4>
+            <p class="card-text">Les plateformes sur lesquels les individus effectuent leurs recherches.</p>
+            <center><a class="btn btn-warning text-white" href={% url 'info' %}>Voir</a></center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Fourth slide-->
+
+   
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+
+        </div>
+    </section>
+
+    
+
+    <section id="team" class="team">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>Consultez notre Equipe</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-4 col-md-3 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'assets/img/team/3.jpg' %}"  class="img-fluid" alt="">
+                        <div class="social">
+                            <!--  <a href=""><i class="icofont-twitter"></i></a> -->
+                            <a href="https://www.facebook.com/k.cheick.konate"><i class="icofont-facebook"></i></a>
+                            <a href="https://www.instagram.com/cheick_konat/"><i class="icofont-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/cheick-konat%C3%A9/"><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Cheick Konaté</h4>
+                        <span>Développeur Principal / Anayste</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'assets/img/team/6.jpg' %}"  class="img-fluid" alt="">
+                        <div class="social">
+                            <!-- <a href=""><i class="icofont-twitter"></i></a> -->
+                            <a href="https://www.facebook.com/nouha.dz1"><i class="icofont-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/nouha-zobiri/"><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Nouha Zobiry</h4>
+                        <span>Anayste</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-3 d-flex align-items-stretch">
+                <div class="member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-img">
+                        <img src="{% static 'assets/img/team/4.jpg' %}"  class="img-fluid" alt="">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/angedion/"><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h4>Ange Dion</h4>
+                        <span>Anayste</span>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+  
+        </div>
+      </section>
+    
+
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+                <center>
+                    <img src="{% static 'assets/img/team/5.jpg' %}"   alt="" class="rounded-circle" alt="Cinque Terre" width="70%" height="50%">
+                
+                    <p class='m-4'>
+                        <strong>Phone:</strong> +1 (506) 252-8551<br>
+                        <strong>Email:</strong> cheick.konat@yahoo.fr<br>
+                    </p>
+                    <div class="social-links mt-3">
+                        <a href="https://www.facebook.com/k.cheick.konate" class="facebook"><i class="bx bxl-facebook"></i></a>
+                       <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                        <a href="https://www.instagram.com/cheick_konat/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                       <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+                        <a href="https://www.linkedin.com/in/cheick-konat%C3%A9/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </center>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Menu</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}#hero">Accueil</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'analyses' %}>Analyses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'donnees_par_pays' %}>Données par pays</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'contact' %}>Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'apropos' %}>A propos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Les analyses</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'nbr_cas_conf' %}>Nombre de cas confirmés</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'nbr_deces' %}>Nombre de décès</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'nbr_tests' %}>Nombre de tests effectués</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'act_medias' %}>Les activités durant le confinement</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'act_medias' %}>Les activités sur les medias sociaux</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'medias_sociaux' %}>Les medias sociaux</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href={% url 'info' %}>Les plateformes de recherche</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Abonnez-vous</h4>
+            <p>Abonnez-vous pour ne rien rater sur nos analyses.</p>
+            <form action="" method="POST">
+              {% csrf_token %}
+              <input type="email" name="email"><input type="submit" value="S'abonner">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CovLive</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+</main>
+
+{% block srcipt %}
+    
+{% endblock srcipt %}
+
+
+{% endblock content %} 
