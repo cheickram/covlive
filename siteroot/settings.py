@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '6dxfo$akkez$kw71owx+3mt*nicqn76b(7th-3sk^(eyu^yy-s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['covlive.herokuapp.com', '127.0.0.1']
 
